@@ -16,11 +16,8 @@ const container = style({
 });
 
 const box = style({
-  display: 'flex',
   padding: '1rem',
-  flexDirection: 'column',
-  gap: '1rem',
-  borderRadius: '1rem',
+  borderRadius: '12px',
   backgroundColor: '#F3F4F5',
 });
 
@@ -30,16 +27,20 @@ const row = style({
   justifyContent: 'space-between',
 });
 
-const switchItem = style({});
+const stepStyle = style({});
 
-globalStyle(`${switchItem} > span > span:first-child`, {
-  fontWeight: 500,
+globalStyle(`${stepStyle} > div > div > div:first-child`, {
+  backgroundColor: 'var(--color-light-neutral-translucent-1300)',
+  color: 'var(--color-light-text-primary-inverted)',
 });
+
+const img = style({ margin: '0 auto', maxWidth: '328px', objectFit: 'contain' });
 
 export const appSt = {
   bottomBtn,
   container,
   box,
   row,
-  switchItem,
+  stepStyle,
+  img,
 };
