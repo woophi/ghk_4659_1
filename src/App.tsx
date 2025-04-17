@@ -114,7 +114,7 @@ export const App = () => {
           ? 'add_one'
           : 'add_more',
     }).then(() => {
-      // LS.setItem(LSKeys.ShowThx, true);
+      LS.setItem(LSKeys.ShowThx, true);
       setThx(true);
       setLoading(false);
     });
